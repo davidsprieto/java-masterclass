@@ -4,6 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /*
+        // 08/11/22
         // BYTE - 8 BITS
         byte myMinByteValue = Byte.MIN_VALUE;
         byte myMaxByteValue = Byte.MAX_VALUE;
@@ -55,6 +57,38 @@ public class Main {
 
         short shortTotal = (short) (1000 + 10 * (byteValue + shortValue + intValue));
         System.out.println(shortTotal);
+         */
+
+        // 08/13/22
+        // FLOATS - 32 BITS
+        float myMinFloatValue = Float.MIN_VALUE;
+        float myMaxFloatValue = Float.MAX_VALUE;
+        System.out.println("Float minimum value: " + myMinFloatValue);
+        System.out.println("Float maximum value: " + myMaxFloatValue);
+
+        // DOUBLES - 64 BITS
+        double myMinDoubleValue = Double.MIN_VALUE;
+        double myMaxDoubleValue = Double.MAX_VALUE;
+        System.out.println("Double minimum value: " + myMinDoubleValue);
+        System.out.println("Double maximum value: " + myMaxDoubleValue);
+
+        int myIntValue = 5 / 3;
+        float myFloatValue = 5f / 3f;
+        double myDoubleValue = 5d / 3d;
+
+        System.out.println("MyIntValue = " + myIntValue);
+        System.out.println("MyFloatValue = " + myFloatValue);
+        System.out.println("MyDoubleValue = " + myDoubleValue);
+
+        // CHALLENGE
+        double pounds = 100d;
+        double poundsToKilos = pounds * 0.45359237d;
+        System.out.println("100 pounds to kilograms = " + poundsToKilos);
+
+        double pi = 3.1415927d;
+        double anotherNumber = 3_000_000.4_567_890d;
+        System.out.println(pi);
+        System.out.println(anotherNumber);
     }
 
 }
