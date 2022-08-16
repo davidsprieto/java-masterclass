@@ -173,6 +173,7 @@ public class Main {
         System.out.println("10 - 2 = " + result);
         */
 
+        /*
         // if-then statement
         boolean isAlien = false;
         if (isAlien == false) {
@@ -222,6 +223,7 @@ public class Main {
         if (!isZero) {
             System.out.println("Got some remainder");
         }
+        */
 
     }
 }
