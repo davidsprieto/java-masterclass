@@ -38,8 +38,53 @@ public class Main {
         System.out.println("Another test."); // You can put many statements on one line however you should NOT do it.
          */
 
+        /*
+        // 08/30/22
+        // Code Blocks and The If, Then, Else Control Statements:
+        Scanner keyboard = new Scanner(System.in);
 
+        boolean gameOver = true;
+        int score;
+        int levelsCompleted;
 
+        System.out.print("Please enter your score: ");
+        score = keyboard.nextInt();
+
+        System.out.print("Please enter how many levels you completed: ");
+        levelsCompleted = keyboard.nextInt();
+
+        int bonus = 100 * levelsCompleted;
+        int finalScore = score + bonus;
+
+        if (gameOver) {
+            System.out.println("Your final score was: " + finalScore);
+            if (finalScore >= 10000) {
+                System.out.println("That's an impressive score!");
+            } else if (finalScore >= 5000 && finalScore < 10000) {
+                System.out.println("That's a pretty good score.");
+            } else {
+                System.out.println("Not a bad score, you could do better though...");
+            }
+        }
+         */
+
+        // Call the method, insert values, and print out the result:
+        System.out.println(calculateScore(true, 8500, 15, 100));
+
+        // OR Save the return value from the method call with the inserted values in a variable then pass in the variable name to System.out.println:
+        int finalScore = calculateScore(true, 8500, 15, 100);
+        System.out.println(finalScore);
+    }
+
+    // 08/30/22
+    // Methods:
+    public static int calculateScore(boolean gameOver, int score, int levelsCompleted, int bonus) {
+        if (gameOver) {
+            bonus = bonus * levelsCompleted;
+            int finalScore = score + bonus;
+            return finalScore;
+        }
+        return -1;
     }
 
 }
