@@ -2,6 +2,7 @@ package SectionFour;
 
 public class Main {
 
+    // main method that runs the program
     public static void main(String[] args) {
 
         /*
@@ -66,14 +67,48 @@ public class Main {
                 System.out.println("Not a bad score, you could do better though...");
             }
         }
-         */
 
         // Call the method, insert values, and print out the result:
         System.out.println(calculateScore(true, 8500, 15, 100));
 
         // OR Save the return value from the method call with the inserted values in a variable then pass in the variable name to System.out.println:
-        int finalScore = calculateScore(true, 8500, 15, 100);
-        System.out.println(finalScore);
+        int highScore = calculateScore(true, 8500, 15, 100);
+        System.out.println(highScore);
+
+        // Could also create variables and pass the values in when calling the method:
+        boolean gameOver = true;
+        int score = 800;
+        int levelsCompleted = 5;
+        int bonus = 100;
+
+        System.out.println(calculateScore(gameOver, score, levelsCompleted, bonus));
+         */
+
+        int highScorePosition = calculateHighScorePosition(1500);
+        System.out.println(displayHighScorePosition("David", highScorePosition));
+
+        highScorePosition = calculateHighScorePosition(900);
+        System.out.println(displayHighScorePosition("Tim", highScorePosition));
+
+        highScorePosition = calculateHighScorePosition(400);
+        System.out.println(displayHighScorePosition("Bob", highScorePosition));
+
+        highScorePosition = calculateHighScorePosition(50);
+        System.out.println(displayHighScorePosition("Bill", highScorePosition));
+
+        // OR:
+        String davidScore = displayHighScorePosition("David", calculateHighScorePosition(1500));
+        System.out.println(davidScore);
+
+        String timScore = displayHighScorePosition("Tim", calculateHighScorePosition(900));
+        System.out.println(timScore);
+
+        String bobScore = displayHighScorePosition("Bob", calculateHighScorePosition(400));
+        System.out.println(bobScore);
+
+        String billScore = displayHighScorePosition("Bill", calculateHighScorePosition(50));
+        System.out.println(billScore);
+
     }
 
     // 08/30/22
@@ -85,6 +120,25 @@ public class Main {
             return finalScore;
         }
         return -1;
+    }
+
+    // 08/31/22
+    // Methods - Continued
+    // Challenge:
+    public static String displayHighScorePosition(String playerName, int highScorePosition) {
+        return "Player: " + playerName + ", managed to get into " + highScorePosition + " position on the high score table.";
+    }
+
+    public static int calculateHighScorePosition(int playerScore) {
+        if (playerScore >= 1000) {
+            return 1;
+        } else if (playerScore >= 500 && playerScore <= 999) {
+            return 2;
+        } else if (playerScore >= 100 && playerScore <= 499) {
+            return 3;
+        } else {
+            return 4;
+        }
     }
 
 }
