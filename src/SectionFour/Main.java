@@ -140,4 +140,20 @@ public class Main {
         return 4;
     }
 
+    // Above method can also be rewritten as:
+    public static int calculateHighScorePositionRewritten(int playerScore) {
+        int position;
+
+        if (playerScore >= 1000) {
+            position = 1;
+        } else if (playerScore >= 500) {
+            position = 2;
+        } else if (playerScore >= 100) {
+            position = 3;
+        } else {
+            position = 4;
+        }
+        return position;
+    }
+
 }
