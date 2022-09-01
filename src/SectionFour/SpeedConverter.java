@@ -8,8 +8,6 @@ public class SpeedConverter {
         printConversion(-5.6);
         printConversion(25.42);
         printConversion(75.114);
-
-        System.out.println(toMilesPerHour(1.5));
     }
 
     public static long toMilesPerHour(double kilometersPerHour) {
