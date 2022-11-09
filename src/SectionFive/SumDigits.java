@@ -4,6 +4,7 @@ public class SumDigits {
 
     public static void main(String[] args) {
         System.out.println(sumDigits(125));
+        System.out.println(sumDigits(-125));
         System.out.println(sumDigits(9));
         System.out.println(sumDigits(10));
     }
