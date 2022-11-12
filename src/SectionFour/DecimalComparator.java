@@ -17,10 +17,7 @@ public class DecimalComparator {
         df.setRoundingMode(RoundingMode.DOWN);
         if (df.format(num1).equals(df.format(num2)) ) {
             return true;
-        } else if (num1 == num2) {
-            return true;
-        }
-        return false;
+        } else return num1 == num2;
     }
 
     // OR:
