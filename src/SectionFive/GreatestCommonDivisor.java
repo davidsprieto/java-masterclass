@@ -20,7 +20,7 @@ public class GreatestCommonDivisor {
         int count = 1;
         int greatest = 1;
 
-        while (count <= (lowest / 2)) {
+        while (count <= lowest) {
             count++;
             if (first % count == 0 && second % count == 0) {
                 greatest = count;
