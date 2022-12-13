@@ -9,7 +9,7 @@ public class MakeArrayConsecutive {
         System.out.println(a2);
     }
 
-    // This function sorts an array in ascending order
+    // This function sorts an array in ascending order without using Arrays.sort()
     public static int[] sort(int[] statues) {
         int temp;
         for (int i = 1; i < statues.length; i++) {
