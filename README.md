@@ -1,4 +1,4 @@
-# Java Programming Masterclass - Udemy Course used to deepening my knowledge & understanding of Java!
+# Java Programming Masterclass - Udemy Course Taken to Deepen my Knowledge & Understanding of Java!
 
 Programming Language:
 - Java
