@@ -1,4 +1,2 @@
-# Java Programming Masterclass
+<h1 align="center">Java Programming Masterclass Course</h1>
 
-Programming Language:
-- Java
